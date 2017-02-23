@@ -1,5 +1,7 @@
 #include<iostream>
 #include<list>
+//在对象之间建立一对多的依赖关系，这样一来，当一个对象改变状态，依赖它的对象都会收到通知，并自动更新
+//为对象之间的松耦合设计而努力
 class Observer {
 public:
 	virtual void update(float temp, float humidity) = 0;
